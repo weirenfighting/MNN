@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
   s.frameworks = 'Metal', 'Accelerate'
   s.library = 'c++'
   s.prepare_command = 'schema/generate.sh'
-
+  s.vendored_frameworks = '../../lib/ios/MNN.framework'
   s.subspec 'core' do |a|
     a.source_files = \
     'include/*.{h,hpp}',\
@@ -65,5 +65,5 @@ Pod::Spec.new do |s|
 
   s.default_subspecs = 'core', 'armv7', 'aarch64', 'metal'
   s.pod_target_xcconfig = {'METAL_LIBRARY_FILE_BASE' => 'mnn', 'HEADER_SEARCH_PATHS' => '$(PODS_TARGET_SRCROOT)/include $(PODS_TARGET_SRCROOT)/3rd_party/flatbuffers/include $(PODS_TARGET_SRCROOT)/schema/current $(PODS_TARGET_SRCROOT)/source/core/ $(PODS_TARGET_SRCROOT)/source/backend/cpu/ $(PODS_TARGET_SRCROOT)/source/backend/cpu/compute/ $(PODS_TARGET_SRCROOT)/source/math/ $(PODS_TARGET_SRCROOT)/3rd_party/half', 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) MNN_CODEGEN_REGISTER=1 MNN_SUPPORT_TFLITE_QUAN=1'}
-  s.user_target_xcconfig = {'OTHER_LDFLAGS' => '-force_load $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MNN/libMNN.a'}
+  #s.user_target_xcconfig = {'OTHER_LDFLAGS' => '-force_load $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MNN/libMNN.a'}
 end

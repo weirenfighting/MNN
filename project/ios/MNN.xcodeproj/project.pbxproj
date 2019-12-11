@@ -130,7 +130,7 @@
 		487970F722C9C19F00795502 /* MNNGemmInt8AddBiasScale_16x4_Unit.S in Sources */ = {isa = PBXBuildFile; fileRef = 487970F622C9C19F00795502 /* MNNGemmInt8AddBiasScale_16x4_Unit.S */; };
 		4887145A215153F900CCE0D8 /* ErrorCode.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 48871459215153F900CCE0D8 /* ErrorCode.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		48871465215225D600CCE0D8 /* ImageProcess.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 48871464215225D600CCE0D8 /* ImageProcess.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		4887147A215249EA00CCE0D8 /* Matrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 48871478215249EA00CCE0D8 /* Matrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4887147A215249EA00CCE0D8 /* MatrixMNN.h in Headers */ = {isa = PBXBuildFile; fileRef = 48871478215249EA00CCE0D8 /* MatrixMNN.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4887147B215249EA00CCE0D8 /* Rect.h in Headers */ = {isa = PBXBuildFile; fileRef = 48871479215249EA00CCE0D8 /* Rect.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		48887582215B639F0079B12E /* TensorUtils.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 488873AF215B639D0079B12E /* TensorUtils.hpp */; };
 		48887584215B639F0079B12E /* Concurrency.h in Headers */ = {isa = PBXBuildFile; fileRef = 488873B1215B639D0079B12E /* Concurrency.h */; };
@@ -909,7 +909,7 @@
 		487970F922CE19EA00795502 /* FileLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileLoader.cpp; sourceTree = "<group>"; };
 		48871459215153F900CCE0D8 /* ErrorCode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ErrorCode.hpp; sourceTree = "<group>"; };
 		48871464215225D600CCE0D8 /* ImageProcess.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ImageProcess.hpp; sourceTree = "<group>"; };
-		48871478215249EA00CCE0D8 /* Matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix.h; sourceTree = "<group>"; };
+		48871478215249EA00CCE0D8 /* MatrixMNN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixMNN.h; sourceTree = "<group>"; };
 		48871479215249EA00CCE0D8 /* Rect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rect.h; sourceTree = "<group>"; };
 		488873AF215B639D0079B12E /* TensorUtils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TensorUtils.hpp; sourceTree = "<group>"; };
 		488873B1215B639D0079B12E /* Concurrency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Concurrency.h; sourceTree = "<group>"; };
@@ -1652,7 +1652,7 @@
 				48871459215153F900CCE0D8 /* ErrorCode.hpp */,
 				4826546A210AF76D00B2CFEA /* HalideRuntime.h */,
 				48871464215225D600CCE0D8 /* ImageProcess.hpp */,
-				48871478215249EA00CCE0D8 /* Matrix.h */,
+				48871478215249EA00CCE0D8 /* MatrixMNN.h */,
 				480529612105DDA400AA776E /* Interpreter.hpp */,
 				48871479215249EA00CCE0D8 /* Rect.h */,
 				4851BE0F2122C1BC009BB0AC /* Tensor.hpp */,
@@ -2665,7 +2665,7 @@
 				480529622105DDA400AA776E /* Interpreter.hpp in Headers */,
 				48070735231E512D00528CE5 /* ExprCreator.hpp in Headers */,
 				92EEFF28217F0EEF00F89377 /* MetalCrop.hpp in Headers */,
-				4887147A215249EA00CCE0D8 /* Matrix.h in Headers */,
+				4887147A215249EA00CCE0D8 /* MatrixMNN.h in Headers */,
 				486FDF40223E495B00F487FB /* CPUBinary.hpp in Headers */,
 				48871465215225D600CCE0D8 /* ImageProcess.hpp in Headers */,
 				9243106D2239FE0B0016DA25 /* MetalSize.hpp in Headers */,
@@ -2889,7 +2889,6 @@
 				0F1465B31FA18D1000F9860A /* Frameworks */,
 				0F1465B41FA18D1000F9860A /* Headers */,
 				0F1465B51FA18D1000F9860A /* Resources */,
-				AE8CC60B21BFE618004358B3 /* ShellScript */,
 			);
 			buildRules = (
 			);
