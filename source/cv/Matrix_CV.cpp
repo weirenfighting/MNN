@@ -9,7 +9,7 @@
 #include <cstddef>
 #include <cstdint>
 #include <utility>
-#include <MNN/Matrix.h>
+#include <MNN/MatrixMNN.h>
 #include "cv/SkNx.h"
 
 namespace MNN {
