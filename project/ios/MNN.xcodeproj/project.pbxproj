@@ -82,7 +82,7 @@
 		1F501F842397BA5B004E8721 /* ImageProcess.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1F501F772397BA5A004E8721 /* ImageProcess.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F501F852397BA5B004E8721 /* ErrorCode.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1F501F782397BA5A004E8721 /* ErrorCode.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F501F862397BA5B004E8721 /* Rect.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F501F792397BA5A004E8721 /* Rect.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1F501F872397BA5B004E8721 /* MatrixMNN.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F501F7A2397BA5A004E8721 /* MatrixMNN.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F501F872397BA5B004E8721 /* Matrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F501F7A2397BA5A004E8721 /* Matrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F501F882397BA5B004E8721 /* Tensor.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1F501F7B2397BA5A004E8721 /* Tensor.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F501F892397BA5B004E8721 /* MNNForwardType.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F501F7C2397BA5A004E8721 /* MNNForwardType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F501F8B2397BA5B004E8721 /* MNNSharedContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F501F7E2397BA5B004E8721 /* MNNSharedContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -876,7 +876,7 @@
 		1F501F772397BA5A004E8721 /* ImageProcess.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ImageProcess.hpp; path = MNN/ImageProcess.hpp; sourceTree = "<group>"; };
 		1F501F782397BA5A004E8721 /* ErrorCode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ErrorCode.hpp; path = MNN/ErrorCode.hpp; sourceTree = "<group>"; };
 		1F501F792397BA5A004E8721 /* Rect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rect.h; path = MNN/Rect.h; sourceTree = "<group>"; };
-		1F501F7A2397BA5A004E8721 /* MatrixMNN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MatrixMNN.h; path = MNN/MatrixMNN.h; sourceTree = "<group>"; };
+		1F501F7A2397BA5A004E8721 /* Matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Matrix.h; path = MNN/Matrix.h; sourceTree = "<group>"; };
 		1F501F7B2397BA5A004E8721 /* Tensor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Tensor.hpp; path = MNN/Tensor.hpp; sourceTree = "<group>"; };
 		1F501F7C2397BA5A004E8721 /* MNNForwardType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MNNForwardType.h; path = MNN/MNNForwardType.h; sourceTree = "<group>"; };
 		1F501F7E2397BA5B004E8721 /* MNNSharedContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MNNSharedContext.h; path = MNN/MNNSharedContext.h; sourceTree = "<group>"; };
@@ -1654,7 +1654,7 @@
 				1F501F722397BA5A004E8721 /* HalideRuntime.h */,
 				1F501F772397BA5A004E8721 /* ImageProcess.hpp */,
 				1F501F752397BA5A004E8721 /* Interpreter.hpp */,
-				1F501F7A2397BA5A004E8721 /* MatrixMNN.h */,
+				1F501F7A2397BA5A004E8721 /* Matrix.h */,
 				1F501F732397BA5A004E8721 /* MNNDefine.h */,
 				1F501F7C2397BA5A004E8721 /* MNNForwardType.h */,
 				1F501F7E2397BA5B004E8721 /* MNNSharedContext.h */,
@@ -2612,7 +2612,7 @@
 				1F501F882397BA5B004E8721 /* Tensor.hpp in Headers */,
 				92FF028223AA0B5A00AC97F6 /* CPUSoftmaxGrad.hpp in Headers */,
 				92FF03B823AA0B5A00AC97F6 /* Convolution3D3x3.hpp in Headers */,
-				1F501F872397BA5B004E8721 /* MatrixMNN.h in Headers */,
+				1F501F872397BA5B004E8721 /* Matrix.h in Headers */,
 				92FF025C23AA0B5A00AC97F6 /* CPUGatherV2.hpp in Headers */,
 				92FF04A623AA0BFB00AC97F6 /* FileLoader.hpp in Headers */,
 				92FF026E23AA0B5A00AC97F6 /* CPUQuantizationUtils.hpp in Headers */,
@@ -3682,7 +3682,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = "0.2.1.9(20200511)";
+				CURRENT_PROJECT_VERSION = "0.2.1.9(20200526)";
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4BT5SUXG7B;
@@ -3733,7 +3733,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = "0.2.1.9(20200511)";
+				CURRENT_PROJECT_VERSION = "0.2.1.9(20200526)";
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4BT5SUXG7B;

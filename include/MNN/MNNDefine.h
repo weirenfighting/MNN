@@ -5,6 +5,7 @@
 //  Created by MNN on 2018/08/09.
 //  Copyright © 2018, Alibaba Group Holding Limited
 //
+//  version：0.2.1.9(20200526)
 
 #ifndef MNNDefine_h
 #define MNNDefine_h

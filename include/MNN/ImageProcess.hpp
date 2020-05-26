@@ -10,7 +10,7 @@
 #define ImageProcess_hpp
 
 #include <MNN/ErrorCode.hpp>
-#include <MNN/MatrixMNN.h>
+#include <MNN/Matrix.h>
 #include <MNN/Tensor.hpp>
 
 namespace MNN {
